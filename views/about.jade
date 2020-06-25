@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title About
+    link(rel='stylesheet', type='text/css', href='stylesheets/about.css ')
+  body
+    header
+      .main
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/predict') Predict
+          li.active
+            a(href='/about') About
+      .paragraph
+        p
+          | This model is created using Teachable Machine Pose model which I have trained on around 800 images per class of 4 different Hand Gestures.
+          | I have used Teachable Machine Pose Library for creating this web application ( i.e. loading the model, accesing the webcam and finally predicting the hand gesture). This model is built on PoseNet model layer and Teachable Machine Model layer which I have trained via 
+          a(href='https://teachablemachine.withgoogle.com/train/pose') Teachable Machine Model
